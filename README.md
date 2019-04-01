@@ -1,2 +1,0 @@
-# NationRPGameMechanics
-Created with CodeSandbox

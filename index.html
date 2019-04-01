@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Test</title>
+    <!--
+      script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script
+    -->
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div style="height: 500%; width: 1%; position: absolute;"></div>
+    <div class="stick">
+      <canvas id="Canvas" width="500" height="500"></canvas>
+    </div>
+    <div style="float: left; background: rgba(50, 23, 66, 255); width: 45%">
+      <h3>Add Country</h3>
+
+      <input type="text" id="countryAdd" />
+      <button onclick="AddCountry();">Add</button>
+
+      <div id="Countries"></div>
+    </div>
+    <div id="CountryTemplate">
+      <br />
+      <h2 id="CName"></h2>
+      <h4>Military Control</h4>
+      <p id="troops">Troops: 10</p>
+      <button id="CCT" style="float: left" onclick="CreateTroops(1);">
+        Place Troops
+      </button>
+      <input type="range" min="1" max="5" id="slider" />
+      <h4>Dashboard</h4>
+      <p id="r1"></p>
+      <p id="r2"></p>
+      <p id="r3"></p>
+      <p id="r4"></p>
+    </div>
+    <div id="TileEditing">
+      <h2>Edit Tile</h2>
+      <h3 id="currentlyEditing"></h3>
+      <button onclick="currentSection.modify(&quot;ocean&quot;);">
+        Toggle Ocean
+      </button>
+      <button onclick="currentSection.modify(&quot;shore&quot;);">
+        Toggle Shoreline
+      </button>
+      <h4 id="currentStatus"></h4>
+    </div>
+    <script src="https://web.editey.com/1w4etmtTnU0WQ6PYK1gacAINdXxrgigfz/PublicResources/CanvasTools/Prefs.js"></script>
+
+    <script>
+      showGrid = true;
+      keyCheck = true;
+      gridSize = 20;
+    </script>
+
+    <script src="https://88950k94q0.codesandbox.io/src/CanvasTools.js"></script>
+    <script src="Code.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
